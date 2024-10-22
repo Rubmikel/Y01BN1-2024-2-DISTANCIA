@@ -30,3 +30,4 @@ if st.button("Ejecutar Ejercicio 4"):
     iguales = len([num for num in lista_numeros if num == 10])
     menores = len([num for num in lista_numeros if num < 10])
     
+    
