@@ -28,9 +28,9 @@ def main():
             st.error(error)
         else:
             st.success("Automovil registrado exitosamente.")
-            st.write("Marca:",marca)
-            st.write("Modelo:",modelo)
-            st.write("Kilometraje:",kilometraje)
+            st.write("**Marca:**",marca)
+            st.write("**Modelo:**",modelo)
+            st.write("**Kilometraje:**",kilometraje)
 
 if __name__ == "__main__":
     main()
