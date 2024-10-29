@@ -1,29 +1,28 @@
 import streamlit as st
 
-def calcular(operacion, num1,num2):
-    """Realiza la operacion especificada entre num1 y num2."""
+def calcular(operacion, num1, num2):
+    """Realiza la operación especificada entre num1 y num2."""
     try:
         num1 = float(num1)
         num2 = float(num2)
     except ValueError:
-        return "Por favor, ingrese numeros validos"
-
+        return "Por favor, ingrese números válidos"
+    
     if operacion == "Suma":
         return num1+num2
     elif operacion == "Resta":
         return num1-num2
-    elif operacion == "Multiplicacion":
+    elif operacion == "Multiplicación":
         return num1*num2
-    elif operacion == "Division":
+    elif operacion == "División":
         if num2 == 0:
             return "Error: no se puede dividir entre 0"
         return num1/num2
     else:
-        return "Operacion no valida"
+        return "Operación no válida"
 
-    def main():
-        st.title("Calculadora Basica")
-        st.title("Calculadora Básica")
+def main():
+    st.title("Calculadora Básica")
     st.write("Seleccione la operación e ingrese los números: ")
 
     #Seleccione la operación
