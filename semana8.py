@@ -32,7 +32,7 @@ def main():
             st.write("Modelo:",modelo)
             st.write("Kilometraje:",kilometraje)
 
-if __name__ == "__main__";
+if __name__ == "__main__":
     main()
 
 
